@@ -63,6 +63,7 @@ flutter:
     - assets/menu_items/
     - assets/profiles/
     - assets/nav_items/
+    - assets/data.json
 
   fonts:
     - family: SFPro
