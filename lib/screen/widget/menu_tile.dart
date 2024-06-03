@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'menu_tile_image.dart';
+import 'menu_tile_image_with_no_background_color.dart';
 import 'menu_tile_sub_title.dart';
 import 'menu_tile_title.dart';
 
@@ -14,6 +15,7 @@ class MenuTile extends StatelessWidget {
   final Color imageColor;
   final Color? backgroundColor;
   final EdgeInsetsGeometry? padding;
+  final bool showImageBackgroundColor;
 
   const MenuTile({
     super.key,
@@ -26,6 +28,7 @@ class MenuTile extends StatelessWidget {
     required this.imageColor,
     this.backgroundColor = Colors.white,
     this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+    this.showImageBackgroundColor = true,
   });
 
   @override
@@ -41,7 +44,9 @@ class MenuTile extends StatelessWidget {
         ),
         child: Row(
           children: [
-            MenuTileImage(imageColor: imageColor, image: image),
+            showImageBackgroundColor
+                ? MenuTileImage(imageColor: imageColor, image: image)
+                : MenuTileImageWithNoBackgroundColor(image: image),
             const SizedBox(width: 16),
             Expanded(
               child: Row(
