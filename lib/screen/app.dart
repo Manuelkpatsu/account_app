@@ -1,7 +1,7 @@
 import 'package:account_app/theme/custom_color.dart';
 import 'package:flutter/material.dart';
 
-import 'account_three/account_three_screen.dart';
+import 'account_four/account_four_screen.dart';
 import 'home/home_screen.dart';
 import 'summary/summary_screen.dart';
 
@@ -17,7 +17,7 @@ class _AppState extends State<App> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const SummaryScreen(),
-    const AccountThreeScreen(),
+    const AccountFourScreen(),
   ];
   final List<BottomNavigationBarItem> _navBarItems = [
     BottomNavigationBarItem(
@@ -74,7 +74,7 @@ class _AppState extends State<App> {
       bottomNavigationBar: BottomNavigationBar(
         unselectedItemColor: CustomColor.unselectedNavItemColor,
         selectedItemColor: CustomColor.blueAccent,
-        backgroundColor: CustomColor.backgroundColor,
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentPage,
         onTap: (index) {
