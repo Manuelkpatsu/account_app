@@ -1,7 +1,7 @@
 import 'package:account_app/theme/custom_color.dart';
 import 'package:flutter/material.dart';
 
-import 'account/account_screen.dart';
+import 'account_two/account_two_screen.dart';
 import 'home/home_screen.dart';
 import 'summary/summary_screen.dart';
 
@@ -17,7 +17,7 @@ class _AppState extends State<App> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const SummaryScreen(),
-    const AccountScreen(),
+    const AccountTwoScreen(),
   ];
   final List<BottomNavigationBarItem> _navBarItems = [
     BottomNavigationBarItem(

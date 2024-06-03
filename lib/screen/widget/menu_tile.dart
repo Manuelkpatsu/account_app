@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../widget/menu_tile_image.dart';
+import 'menu_tile_image.dart';
 import 'menu_tile_sub_title.dart';
 import 'menu_tile_title.dart';
 
@@ -12,6 +12,8 @@ class MenuTile extends StatelessWidget {
   final VoidCallback? onTap;
   final BorderRadius? borderRadius;
   final Color imageColor;
+  final Color? backgroundColor;
+  final EdgeInsetsGeometry? padding;
 
   const MenuTile({
     super.key,
@@ -22,6 +24,8 @@ class MenuTile extends StatelessWidget {
     required this.onTap,
     required this.borderRadius,
     required this.imageColor,
+    this.backgroundColor = Colors.white,
+    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
   });
 
   @override
@@ -30,10 +34,10 @@ class MenuTile extends StatelessWidget {
       onTap: onTap,
       borderRadius: borderRadius,
       child: Ink(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+        padding: padding,
         decoration: BoxDecoration(
           borderRadius: borderRadius,
-          color: Colors.white,
+          color: backgroundColor,
         ),
         child: Row(
           children: [

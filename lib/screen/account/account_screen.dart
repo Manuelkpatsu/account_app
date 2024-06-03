@@ -4,12 +4,12 @@ import 'package:account_app/theme/custom_color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'widget/menu_divider.dart';
-import 'widget/menu_tile.dart';
-import 'widget/menu_title.dart';
-import 'widget/profile_full_name.dart';
-import 'widget/profile_picture.dart';
-import 'widget/profile_username.dart';
+import '../widget/menu_divider.dart';
+import '../widget/menu_tile.dart';
+import '../widget/menu_title.dart';
+import '../widget/profile_full_name.dart';
+import '../widget/profile_picture.dart';
+import '../widget/profile_username.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});

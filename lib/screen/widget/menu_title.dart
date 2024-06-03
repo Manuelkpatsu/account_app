@@ -3,13 +3,18 @@ import 'package:flutter/material.dart';
 
 class MenuTitle extends StatelessWidget {
   final String title;
+  final EdgeInsetsGeometry padding;
 
-  const MenuTitle({super.key, required this.title});
+  const MenuTitle({
+    super.key,
+    required this.title,
+    this.padding = const EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 12),
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 12),
+      padding: padding,
       child: Text(
         title,
         style: const TextStyle(
