@@ -1,3 +1,4 @@
+import 'package:account_app/screen/widget/account_app_bar.dart';
 import 'package:account_app/screen/widget/chevron_right_icon.dart';
 import 'package:account_app/theme/custom_color.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,10 +17,7 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Account'),
-        centerTitle: false,
-      ),
+      appBar: AccountAppBar(),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
