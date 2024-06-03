@@ -74,7 +74,7 @@ class _AppState extends State<App> {
       bottomNavigationBar: BottomNavigationBar(
         unselectedItemColor: CustomColor.unselectedNavItemColor,
         selectedItemColor: CustomColor.blueAccent,
-        backgroundColor: CustomColor.backgroundColor,
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentPage,
         onTap: (index) {
