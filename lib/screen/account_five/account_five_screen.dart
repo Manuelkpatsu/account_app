@@ -114,10 +114,14 @@ class AccountFiveScreen extends StatelessWidget {
               showImageBackgroundColor: false,
               imageColor: CustomColor.greenAccent,
               onTap: null,
-              widget: CupertinoSwitch(
-                activeColor: CustomColor.greenAccent,
-                value: true,
-                onChanged: (value) {},
+              widget: Container(
+                alignment: Alignment.centerRight,
+                height: 28,
+                child: CupertinoSwitch(
+                  activeColor: CustomColor.greenAccent,
+                  value: true,
+                  onChanged: (value) {},
+                ),
               ),
             ),
             const MenuDivider(padding: EdgeInsets.only(left: 56)),
